@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f8f6;
+  --foreground: #1a2a24;
+  --surface: #ffffff;
+  --line: #d5e2db;
+  --primary: #1f8b4c;
+  --primary-strong: #16673a;
+  --primary-soft: #e7f4ec;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+* {
+  border-color: var(--line);
+}
+
+select:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
